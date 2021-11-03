@@ -7,4 +7,4 @@ This is a service that collects data from an Open Weather API and store it as a 
 1. Download this project in a directory;
 2. In your directory, run the command docker-compose up;
 3. In a browser, access http://localhost:5000/;
-4. Then, follow the instruction on the web app to teste the service.
+4. Then, follow the instruction on the web app to test the service.
