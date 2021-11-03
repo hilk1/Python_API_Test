@@ -1,0 +1,48 @@
+{% extends 'bootstrap/base.html' %}
+
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block content %}
+
+{% include "header.html" %}
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('https://e3.365dm.com/21/06/1600x900/skynews-sun-weather_5415028.jpg?bypass-service-worker&20210614155058')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="site-heading">
+            <h1>Coding Challenge</h1>
+            <span class="subheading">A weather data collector.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        
+          <!-- This is where the form will go -->
+           {{ckeditor.load() }}
+        
+        
+        {{ ckeditor.config(name='body') }}
+        
+        
+        {{ wtf.quick_form(form, novalidate=True , button_map={"submit": "primary"}) }}
+        
+
+      </div>
+    </div>
+  </div>
+  
+ 
+
+<hr>
+{% include "footer.html" %}
+{% endblock %}
