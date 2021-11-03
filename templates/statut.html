@@ -1,0 +1,37 @@
+{% extends 'bootstrap/base.html' %}
+
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block content %}
+
+{% include "header.html" %}
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('https://e3.365dm.com/21/06/1600x900/skynews-sun-weather_5415028.jpg?bypass-service-worker&20210614155058')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+            <h1>Thanks for using our service!</h1>
+            <!-- <span class="subheading">Please wait while we are processing your resquest.</span> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <p>Your User ID is: <b>{{ID}}</b>. Please save it and Click <a href="/download-data?user_id={{ID}}"> here </a> to get your data in JSON file.</p>
+        
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  {% include "footer.html" %}
+  {% endblock %}
